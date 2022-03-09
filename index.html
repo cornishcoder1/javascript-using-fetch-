@@ -14,7 +14,7 @@
 
     <script>
         fetch("https://ci-swapi.herokuapp.com/api/")
-            .then(response => response.json()) // or .json()
+            .then(response => response.text())
             .then(data => displayData(data))
             .catch((e) => {
                 console.error("Error: ", e);
